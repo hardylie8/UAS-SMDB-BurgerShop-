@@ -596,7 +596,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
                     echo '<a href="hapus.php?id=' . $da['IdMenu'] . '"><button  class="submit delete"><i class="fa fa-trash" aria-hidden="true"></i></button></a>';
                 }
                 if (isset($_SESSION['status']) && $_SESSION['status'] == "User") {
-                    echo '<button type="submit" class="submit">add to cart</button>';
+                    echo '<a href="menu.php?action=add&id=' . $da['IdMenu'] . '"><button type="submit" class="submit">add to cart</button></a>';
                 }
                 echo '</div>';
             }
